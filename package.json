@@ -1,0 +1,24 @@
+{
+  "name": "social-network-mongoapp",
+  "version": "1.0.0",
+  "description": "This project is a command-line application built to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarabarnett/Social-Network-mongoapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarabarnett/Social-Network-mongoapp/issues"
+  },
+  "homepage": "https://github.com/Sarabarnett/Social-Network-mongoapp#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10"
+  }
+}
