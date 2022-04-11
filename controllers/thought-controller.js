@@ -8,7 +8,7 @@ const thoughtController = {
   getThoughts(req, res) {
     Thought.find({})
     .populate({
-      path: 'user',
+      path: 'users',
       select: ('-__v')
     })
       .select('-__v')
@@ -24,7 +24,7 @@ const thoughtController = {
   getThoughtById({ params }, res) {
     Thought.findOne({ _id: params.id })
     .populate({
-      path: 'user',
+      path: 'users',
       select: ('-__v')
     })
       .select('-__v')
@@ -101,7 +101,7 @@ const thoughtController = {
   },
 
   removeReaction({ params}, res) {
-    Thoughts.findOne(
+    Thought.findOne(
       {_id: params.thoughtId},
       )
       .then(dbThoughtData => {
